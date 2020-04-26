@@ -24,7 +24,7 @@ function postPokemon(pokemon){
 function deletePokemon(id){
     fetch(`http://localhost:3000/pokemons/${id}`, {method: 'DELETE', 
         headers: {'Content-Type': 'application/json'}
-    }).then(console.log)
+    })
 }
 
 
@@ -66,7 +66,7 @@ function buildTeam(e){
     addButton.innerText = "Add Pokemon "
     
     if (ul.childElementCount < 6){
-        addButton.addEventListener('click', postPokemon)
+        addButton.addEventListener('click', handlePost)
     }
 
     div.appendChild(trainer)
@@ -77,7 +77,6 @@ function buildTeam(e){
 }
 
 function buildNewPokemon(poke){
-    console.log(poke.trainer_id)
     const updateUL = document.body.querySelectorAll("div.card")[poke.trainer_id-1].lastChild
 
     let li = document.createElement('li')
@@ -97,8 +96,13 @@ function buildNewPokemon(poke){
 
 
 //Handlers
+function handlePost(e){
+    postPokemon(e)
+}
+
 function handleDelete(e){
     const poke_id = e.target["data-pokemon-id"]
     e.target.parentElement.remove()
     deletePokemon(poke_id) 
 }
+
