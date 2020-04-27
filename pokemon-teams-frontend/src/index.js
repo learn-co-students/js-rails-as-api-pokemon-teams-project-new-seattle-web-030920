@@ -53,6 +53,7 @@ function addTrainerPokemon(pokemon) {
     removeBtn.innerText = "Release"
     removeBtn.style.backgroundColor("red")
     li.appendChild(removeBtn)
+    
 }
 
 function wireAddBtn(addBtn) {
