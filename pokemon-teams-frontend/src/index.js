@@ -51,6 +51,7 @@ function addTrainerPokemon(pokemon) {
     let removeBtn = document.createElement('button')
     removeBtn.id = `remove_${li.id}`
     removeBtn.innerText = "Release"
+    removeBtn.style.backgroundColor("red")
     li.appendChild(removeBtn)
 }
 
