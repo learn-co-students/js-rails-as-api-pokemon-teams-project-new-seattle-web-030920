@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+=======
 # Pokemon Teams Project
 
 ## Learning Goals
@@ -285,3 +311,4 @@ DELETE /pokemons/:pokemon_id
   "trainer_id":1
 }
 ```
+>>>>>>> 5d8f01969133fb4b4d28447740238d9f69faadff
